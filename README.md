@@ -1,26 +1,26 @@
 # MontyPlugin
-Repositorio para Cybercamp 2015
+Cybercamp repository for 2015
 
-#Aplicacion 
+#Aplication 
 
-Esta aplicacion se basa en un sistema de identificacion biometrica con un sistema fisico para evitar la falsificacion
+This application is based on a biometric identification system with a physical system to prevent counterfeiting
 
 #Requerimientos 
 
-Placa de arduino uno 5 $
-Placa rfid 2$ 
-Tarjeta o llavero rfid 2$
+Arduino One 5 $
+rfid plate 2$ 
+rfid Key  2$
 Webcam
 
-#Tecnologias Usadas
+#technologies used
 
 Opencv
 Python
 C/C++
 Arduino
 
-#Estandar en el que nos basamos
+#standard
 
-Iso/IEC WD 24745 En desarrollo
+Iso/IEC WD 24745 Developing
 
-#Funcionamiento 
+#Operation
