@@ -24,7 +24,7 @@ public class IntroPanel extends JPanel {
 		botonComentar.addActionListener(new ActionListener() {			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// TODO Llamada al panel de reconocimento RFID
+				// Call all RFID Reconnaissance panel
 				try {
 					InterfacesController.getInstance().setInterface(1);
 				} catch (Exception e1) {
@@ -37,7 +37,7 @@ public class IntroPanel extends JPanel {
 		botonPago.addActionListener(new ActionListener() {			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// TODO Llamada al panel de BioMetria
+				// all panel called biometrics
 				try {
 					InterfacesController.getInstance().setInterface(2);
 				} catch (Exception e1) {
@@ -50,7 +50,7 @@ public class IntroPanel extends JPanel {
 		botonAgregarUser.addActionListener(new ActionListener() {			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// TODO Llamada al panel de Creación de usuarios
+				// all calling the user creation panel
 				try {
 					InterfacesController.getInstance().setInterface(3);
 				} catch (Exception e1) {

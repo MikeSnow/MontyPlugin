@@ -1,16 +1,16 @@
-import serial #cargamos la libreria serial
+import serial #We load the serial library
 import sys
-ser = serial.Serial('COM4', 9600) #inicializamos el puerto de serie a 9600 baud
+ser = serial.Serial('COM4', 9600) #We initialize the serial port 9600 baud
  
-#variable para almacenar el mensaje
-#le asignamos un valor introducido por el usuario
+#variable to store the message
+#we assign a value entered by the user
 frase= "Introduce un caracter ('s' para salir) "
 print ("Introduce un caracter ('s' para salir)")
 entrada = input()
  
-while entrada != 's': #introduciendo 's' salimos del bucle
+while entrada != 's': #We introduced ' s ' out of the loop
  
-   #ser.write(entrada) #envia la entrada por serial
+   #ser.write(enter) #send the serial input
    frase = ser.readline();
    print (frase)
-   entrada = input() #introduce otro caracter por teclado
+   entrada = input() #introduces another character keyboard

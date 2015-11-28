@@ -22,6 +22,6 @@ main(){
 	else if((result=pam_end(pamh,result))!=PAM_SUCCESS)
 		fprintf(stderr, "end Failed: %d\n", result);
 	else
-		//ejecutar aplicación correspondiente.
+		//corresponding application run.
 		fprintf("Se ejecuta la aplicación");
 }
