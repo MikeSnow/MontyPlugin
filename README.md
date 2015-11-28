@@ -1,9 +1,14 @@
 # MontyPlugin
 Cybercamp repository for 2015
 
+
 #Aplication 
 
-This application is based on a biometric identification system with a physical system to prevent counterfeiting
+This application is based on a biometric identification system with a physical system to prevent counterfeiting. 
+
+#License
+
+License GPLv3
 
 #Requerimientos 
 
