@@ -1,1 +1,0 @@
-principal.o: ../principal.c

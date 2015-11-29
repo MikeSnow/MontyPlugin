@@ -21,9 +21,9 @@ public class Main {
 		JFrame frame= new JFrame("MontyPlugin");
 		
 		/**
-		 * ALL
-		 * 1. Panel Login Call usr/pass
-		 * 2. If the validation is successful we pass IntroPanel
+		 * TODO 
+		 * 1. Llama al panel de Login usr/pass
+		 * 2. Si la validación es correcta pasamos al IntroPanel
 		 */
 		
 		InterfacesController iController = InterfacesController.getInstance();
