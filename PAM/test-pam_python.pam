@@ -1,0 +1,4 @@
+auth	required	/home/miki/Documentos/pam-python-1.0.4/src/pam_python.so /home/miki/Documentos/pam-python-1.0.4/src/test.py
+account	required	/home/miki/Documentos/pam-python-1.0.4/src/pam_python.so /home/miki/Documentos/pam-python-1.0.4/src/test.py arg1 arg2
+password required	/home/miki/Documentos/pam-python-1.0.4/src/pam_python.so /home/miki/Documentos/pam-python-1.0.4/src/test.py
+session	required	/home/miki/Documentos/pam-python-1.0.4/src/pam_python.so /home/miki/Documentos/pam-python-1.0.4/src/test.py
