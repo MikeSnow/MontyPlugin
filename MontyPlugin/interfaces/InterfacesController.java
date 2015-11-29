@@ -10,7 +10,7 @@ import javax.swing.JPanel;
 public class InterfacesController {
 	private static InterfacesController instance = null;
 	
-	private List<JPanel> listaInterfaces=new ArrayList<JPanel>();
+	private List<PanelActionToLoad> listaInterfaces=new ArrayList<PanelActionToLoad>();
 
 	private JFrame frame = null;
 	private int selectedInterface=-1;
@@ -24,7 +24,7 @@ public class InterfacesController {
 		return instance;
 	}
 	
-	public void addInterface(JPanel panel){
+	public void addInterface(PanelActionToLoad panel){
 		listaInterfaces.add(panel);
 	}
 	
@@ -32,11 +32,12 @@ public class InterfacesController {
 		if(frame==null) throw new Exception("Frame is null");
 		if(index<0 || index>=listaInterfaces.size()) throw new Exception("Index out of Range");
 		if(selectedInterface>=0){
-			listaInterfaces.get(selectedInterface).setVisible(false);
+			((JPanel)listaInterfaces.get(selectedInterface)).setVisible(false);
 		}
 		frame.getContentPane().removeAll();
-		listaInterfaces.get(index).setVisible(true);
-		frame.getContentPane().add(listaInterfaces.get(index));
+		((JPanel)listaInterfaces.get(index)).setVisible(true);
+		listaInterfaces.get(index).myLoad();
+		frame.getContentPane().add((JPanel)listaInterfaces.get(index));
 		selectedInterface=index;
 	}
 

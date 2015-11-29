@@ -11,7 +11,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-public class IntroPanel extends JPanel {
+public class IntroPanel extends JPanel implements PanelActionToLoad{
 
 	private static final long serialVersionUID = 1L;
 	
@@ -80,6 +80,12 @@ public class IntroPanel extends JPanel {
 		add(botonAgregarUser, gbc);
 		
 		setBorder(BorderFactory.createLineBorder(Color.BLACK));
+	}
+
+	@Override
+	public void myLoad() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

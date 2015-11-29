@@ -1,5 +1,4 @@
 package interfaces;
-
 import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -7,9 +6,16 @@ import java.awt.event.MouseListener;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 
-public class PagoPanel extends JPanel {
-	public PagoPanel() {
-		setBorder(BorderFactory.createLineBorder(Color.RED));
+
+public class ComentarioPanel extends JPanel implements PanelActionToLoad {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public ComentarioPanel() {
+		setBorder(BorderFactory.createLineBorder(Color.YELLOW));
 		addMouseListener(new MouseListener() {			
 			@Override
 			public void mouseReleased(MouseEvent e) {
@@ -46,5 +52,11 @@ public class PagoPanel extends JPanel {
 				}
 			}
 		});
+	}
+
+	@Override
+	public void myLoad() {
+		// TODO Auto-generated method stub
+		
 	}
 }

@@ -49,7 +49,6 @@ public class Main {
 		frame.setBounds(center.x - windowWidth/2, center.y - windowHeight/2, windowWidth, windowHeight);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
-
 	}
 
 }

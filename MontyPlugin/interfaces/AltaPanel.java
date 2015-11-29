@@ -17,8 +17,9 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
-public class AltaPanel extends JPanel {
-	
+public class AltaPanel extends JPanel implements PanelActionToLoad{
+
+	private static final long serialVersionUID = 1L;
 	private JButton botonAlta = new JButton("Alta de Usuario");
 	private JTextField textUser = new JTextField();
 	private JPasswordField passwordUser = new JPasswordField();
@@ -116,5 +117,11 @@ public class AltaPanel extends JPanel {
 				}
 			}
 		});
+	}
+
+	@Override
+	public void myLoad() {
+		// TODO Auto-generated method stub
+		
 	}
 }
